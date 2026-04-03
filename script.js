@@ -1,23 +1,26 @@
 // Mobile Navigation handling
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-const mobileMenuClose = document.getElementById('mobileMenuClose');
 
 if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
-        if (mobileMenuOverlay) {
-            mobileMenuOverlay.classList.add('active');
+        const overlay = document.getElementById('mobileMenuOverlay');
+        if (overlay) {
+            overlay.classList.add('active');
         } else {
             alert('Mobile navigation will open here. Add menu panel in HTML and toggle classes.');
         }
     });
 }
 
-if (mobileMenuClose && mobileMenuOverlay) {
-    mobileMenuClose.addEventListener('click', () => {
-        mobileMenuOverlay.classList.remove('active');
-    });
-}
+document.addEventListener('click', (e) => {
+    const closeBtn = e.target.closest('#mobileMenuClose');
+    if (closeBtn) {
+        const overlay = document.getElementById('mobileMenuOverlay');
+        if (overlay) {
+            overlay.classList.remove('active');
+        }
+    }
+});
 
 // Carousel functionality
 const prevBtn = document.querySelector('.prev-btn');
