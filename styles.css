@@ -1358,3 +1358,32 @@ h3 { font-size: 1.35rem; }
   color: #EAA73F;
 }
 
+/* ==================================
+   MOBILE TWEAKS FOR TICKETS
+=================================== */
+.contact-break { display: none; }
+
+@media (max-width: 768px) {
+  /* CMAS fix */
+  .modelo-checklist-2col {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Footer extra items fix */
+  .footer-links h3[style*="visibility: hidden"] {
+    display: none !important;
+  }
+  .footer-grid {
+    gap: 20px;
+  }
+  .footer-grid > .footer-links:nth-child(4) {
+    margin-top: -20px;
+  }
+
+  /* Contact two lines fix */
+  .contact-break { display: block; margin-bottom: 5px; }
+  .modelo3-subtitle .fa-envelope {
+    margin-left: 0 !important;
+  }
+}
+
