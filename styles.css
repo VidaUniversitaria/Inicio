@@ -1504,3 +1504,35 @@ h3 { font-size: 1.35rem; }
   }
 }
 
+/* Carisma y Vida Marista - Mobile Optimization */
+@media (max-width: 992px) {
+  .carisma-flex-row {
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+  .carisma-flex-row > div {
+    width: 100% !important;
+    flex: none !important;
+  }
+  .carisma-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  /* Centrar botón en móvil */
+  .carisma-flex-row + div[style*="text-align: right"] {
+    text-align: center !important;
+    margin-top: 10px;
+  }
+
+  .carisma-flex-row {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Título y descripción responsivos en la sección de carisma */
+  .carisma-flex-row {
+     margin-bottom: 20px;
+  }
+}
