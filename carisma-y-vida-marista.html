@@ -25,41 +25,108 @@
     </div>
   </header>
 
-  <section class="modelo-section">
-    <div class="modelo-header">
-      <h1 class="modelo-title">Carisma y Vida Marista</h1>
-      <p class="modelo-subtitle">Estamos para acompañarte en tu crecimiento espiritual, humano, comunitario y cristiano en los siguientes ejes:</p>
-    </div>
-    <div class="modelo-container">
-      <div class="modelo-img-col" style="width: 60%;">
-        <img src="fotocarisma.jpeg" alt="Carisma y Vida Marista" class="modelo-img">
+  <!-- SECCIÓN PRINCIPAL -->
+  <section style="background: #ffffff; padding: 40px 0 50px;">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 0 40px;">
+
+      <!-- Título y descripción centrados -->
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h1 style="font-size: 2.6rem; font-weight: 800; color: #013765; line-height: 1.2; margin-bottom: 12px;">
+          Carisma y Vida Marista
+        </h1>
+        <p style="color: #4a657d; font-size: 1.2rem; line-height: 1.75; margin: 0 auto;">
+          Estamos para acompañarte en tu crecimiento espiritual, humano, comunitario y cristiano en los siguientes ejes:
+        </p>
       </div>
-      <div class="modelo-text-col" style="width: 40%;">
-        <div class="modelo-checklist">
-          <div class="modelo-check-item">
-            <div class="modelo-check-icon"><i class="fa-solid fa-check"></i></div>
-            <span class="modelo-check-text">Formativa Catequética<br><span style="font-weight: 400;">(Misas, Rosarios, Hora Santa)</span></span>
-          </div>
-          <div class="modelo-check-item">
-            <div class="modelo-check-icon"><i class="fa-solid fa-check"></i></div>
-            <span class="modelo-check-text">Juventudes Maristas<br><span style="font-weight: 400;">(Misiones)</span></span>
-          </div>
-          <div class="modelo-check-item">
-            <div class="modelo-check-icon"><i class="fa-solid fa-check"></i></div>
-            <span class="modelo-check-text">Solidaria<br><span style="font-weight: 400;">(Jornada de Reflexión y Voluntariado)</span></span>
-          </div>
-          <div class="modelo-check-item">
-            <div class="modelo-check-icon"><i class="fa-solid fa-check"></i></div>
-            <span class="modelo-check-text">Interioridad<br><span style="font-weight: 400;">(Acompañamiento espiritual)</span></span>
-          </div>
-          <div class="modelo-check-item">
-            <div class="modelo-check-icon"><i class="fa-solid fa-check"></i></div>
-            <span class="modelo-check-text">Cultura Vocacional<br><span style="font-weight: 400;">(Escucha Marista)</span></span>
+
+      <!-- DOS COLUMNAS: izq (foto + formativa) | der (4 bullets + botón) -->
+      <div style="display: flex; gap: 20px; align-items: stretch;">
+
+        <!-- COLUMNA IZQUIERDA: imagen + Formativa Catequética -->
+        <div style="flex: 0 0 45%; display: flex; flex-direction: column; gap: 16px;">
+          <!-- Imagen -->
+          <img src="misionesfoto.jpeg" alt="Carisma y Vida Marista"
+            style="width: 100%; height: 260px; object-fit: cover; border-radius: 16px; display: block;">
+
+          <!-- Formativa Catequética -->
+          <div style="background: #fff; border: 1px solid #e4ecf4; border-radius: 14px; padding: 20px 24px; box-shadow: 0 3px 14px rgba(1,55,101,0.07); flex: 1;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+              <div class="modelo-check-icon" style="flex-shrink: 0;"><i class="fa-solid fa-check"></i></div>
+              <strong style="color: #013765; font-size: 1rem; letter-spacing: 0.5px; text-transform: uppercase;">Formativa Catequética</strong>
+            </div>
+            <ul style="list-style: disc; padding-left: 20px; margin: 0; color: #4a657d; font-size: 0.88rem; line-height: 1.8;">
+              <li>Celebraciones, sacramentos y espacios de oración (Eucaristías, Rosarios, Horas Santas, Confesiones).</li>
+              <li>Difusión del carisma marista (tiempos litúrgicos, santoral de profesiones, peregrinación Guadalupana).</li>
+              <li>Acciones solidarias como expresión de la fe.</li>
+            </ul>
           </div>
         </div>
 
-        <a href="#equipo" class="modelo-btn">¿Dónde estamos?</a>
+        <!-- COLUMNA DERECHA: 4 bullets en grid 2x2 + botón -->
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
+
+          <!-- Grid 2x2 -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; flex: 1;">
+
+            <!-- Juventudes Maristas -->
+            <div style="background: #fff; border: 1px solid #e4ecf4; border-radius: 14px; padding: 18px 22px; box-shadow: 0 3px 14px rgba(1,55,101,0.07);">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <div class="modelo-check-icon" style="flex-shrink: 0;"><i class="fa-solid fa-check"></i></div>
+                <strong style="color: #013765; font-size: 1rem; letter-spacing: 0.5px; text-transform: uppercase;">Juventudes Maristas</strong>
+              </div>
+              <ul style="list-style: disc; padding-left: 18px; margin: 0; color: #4a657d; font-size: 0.85rem; line-height: 1.75;">
+                <li>Grupo Juvenil, Jornadas de Reflexión y Voluntariado.</li>
+                <li>Participación en Pascua Juvenil y Congresos Universitarios.</li>
+              </ul>
+            </div>
+
+            <!-- Solidaria -->
+            <div style="background: #fff; border: 1px solid #e4ecf4; border-radius: 14px; padding: 18px 22px; box-shadow: 0 3px 14px rgba(1,55,101,0.07);">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <div class="modelo-check-icon" style="flex-shrink: 0;"><i class="fa-solid fa-check"></i></div>
+                <strong style="color: #013765; font-size: 1rem; letter-spacing: 0.5px; text-transform: uppercase;">Solidaria</strong>
+              </div>
+              <ul style="list-style: disc; padding-left: 18px; margin: 0; color: #4a657d; font-size: 0.85rem; line-height: 1.75;">
+                <li>Misiones (Navidad y Semana Santa).</li>
+                <li>Proyectos sociales: huertos y talleres comunitarios (CEMADE y CMAS).</li>
+              </ul>
+            </div>
+
+            <!-- Interioridad -->
+            <div style="background: #fff; border: 1px solid #e4ecf4; border-radius: 14px; padding: 18px 22px; box-shadow: 0 3px 14px rgba(1,55,101,0.07);">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <div class="modelo-check-icon" style="flex-shrink: 0;"><i class="fa-solid fa-check"></i></div>
+                <strong style="color: #013765; font-size: 1rem; letter-spacing: 0.5px; text-transform: uppercase;">Interioridad</strong>
+              </div>
+              <ul style="list-style: disc; padding-left: 18px; margin: 0; color: #4a657d; font-size: 0.85rem; line-height: 1.75;">
+                <li>Acompañamiento espiritual y talleres de interioridad.</li>
+              </ul>
+            </div>
+
+            <!-- Cultura Vocacional -->
+            <div style="background: #fff; border: 1px solid #e4ecf4; border-radius: 14px; padding: 18px 22px; box-shadow: 0 3px 14px rgba(1,55,101,0.07);">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <div class="modelo-check-icon" style="flex-shrink: 0;"><i class="fa-solid fa-check"></i></div>
+                <strong style="color: #013765; font-size: 1rem; letter-spacing: 0.5px; text-transform: uppercase;">Cultura Vocacional</strong>
+              </div>
+              <ul style="list-style: disc; padding-left: 18px; margin: 0; color: #4a657d; font-size: 0.85rem; line-height: 1.75;">
+                <li>Formación en el Carisma Marista (Formación Laical).</li>
+                <li>Cursos de actualización de la Misión Educativa Marista.</li>
+                <li>Escucha Marista.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Botón alineado a la derecha -->
+          <div style="text-align: right;">
+            <a href="#equipo" class="modelo-btn">¿Dónde estamos?</a>
+          </div>
+
+        </div>
+
       </div>
+
     </div>
   </section>
 
@@ -69,21 +136,31 @@
         <div class="modelo3-header">
           <h2 class="modelo3-title">Conoce al equipo</h2>
         </div>
-        <div class="modelo3-grid" style="justify-content: center; gap: 60px;">
-          <div class="modelo3-card" style="flex: 0 1 auto; min-width: 200px; max-width: 300px;">
-            <img src="Personal/carisma y vida marista/1.jpg" class="modelo3-avatar" style="width: 159px; height: 159px;" alt="Paola Rivero">
+        <div class="modelo3-grid">
+          <div class="modelo3-card">
+            <img src="Personal/carisma y vida marista/1.jpg" class="modelo3-avatar" alt="Paola Rivero">
             <h3 class="modelo3-name">Paola Rivero</h3>
             <p class="modelo3-role">Coordinación General de Pastoral</p>
           </div>
-          <div class="modelo3-card" style="flex: 0 1 auto; min-width: 200px; max-width: 300px;">
-            <img src="Personal/carisma y vida marista/2.jpg" class="modelo3-avatar" style="width: 159px; height: 159px;" alt="Jorge Trujillo">
+          <div class="modelo3-card">
+            <img src="Personal/carisma y vida marista/3.jpg" class="modelo3-avatar" alt="Ricardo Arrigunaga">
+            <h3 class="modelo3-name">Ricardo Arrigunaga</h3>
+            <p class="modelo3-role">Coordinador de Pastoral Catequética</p>
+          </div>
+          <div class="modelo3-card">
+            <img src="Personal/carisma y vida marista/2.jpg" class="modelo3-avatar" alt="Jorge Trujillo">
             <h3 class="modelo3-name">Jorge Trujillo</h3>
             <p class="modelo3-role">Encargado de Pastoral Solidaria</p>
           </div>
-          <div class="modelo3-card" style="flex: 0 1 auto; min-width: 200px; max-width: 300px;">
-            <img src="Personal/carisma y vida marista/3.jpg" class="modelo3-avatar" style="width: 159px; height: 159px;" alt="Ricardo Arrigunaga">
-            <h3 class="modelo3-name">Ricardo Arrigunaga</h3>
-            <p class="modelo3-role">Coordinador de Pastoral Catequética</p>
+          <div class="modelo3-card">
+            <img src="Personal/deportes/1.jpg" class="modelo3-avatar" alt="Rodrigo Cueva">
+            <h3 class="modelo3-name">Rodrigo Cueva</h3>
+            <p class="modelo3-role">Director de Deportes y Pastoral</p>
+          </div>
+          <div class="modelo3-card">
+            <img src="Personal/carisma y vida marista/5.jpeg" class="modelo3-avatar" alt="Hno. Eduardo Navarro">
+            <h3 class="modelo3-name">Hno. Eduardo Navarro, FMS</h3>
+            <p class="modelo3-role">Asesor de Rectoría y de Pastoral</p>
           </div>
         </div>
         <p class="modelo3-subtitle" style="margin-top: 50px; font-size: 1.15rem;"><i class="fa-solid fa-location-dot" style="color: gray; margin-right: 8px;"></i>Estamos en el edificio de Rectoría. <i class="fa-solid fa-envelope" style="color: gray; margin-right: 6px; margin-left: 8px;"></i>Contáctanos: carismayvida@marista.edu.mx Tel. 999 942 9700 Ext. 1112</p>
